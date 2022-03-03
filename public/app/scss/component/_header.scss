@@ -1,0 +1,95 @@
+.navbar {
+  position: relative;
+  box-shadow: 0rem 0.2rem 0.5rem $black-color;
+
+  &.navbar-show {
+    @include mobile {
+      height: 100vh;
+      display: block;
+    }
+  }
+  
+  .block-nav {
+    @include tablet {
+      width: 100%;  
+    }
+
+    .navbar-nav {
+      width: 100%;
+      justify-content: space-between;
+      
+      .nav-link {
+        color: $text-color;
+        font-weight: 500;
+
+        @include mobile {
+          text-align:center;
+          padding-top: 3rem;
+        }
+
+        &:hover {
+          color: $theme-color;
+        }
+      }
+
+      .active {
+        .nav-link {            
+          border-radius: 2.5rem;
+          background-color: $theme-color;
+          color: $white-color;
+
+          @include mobile {
+            background-color: $white-color;
+            color: $theme-color;
+          }
+        }
+      }
+    }
+  }
+
+  .logo {
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      
+      .navbar-brand {          
+        margin: auto;
+        padding: 0;
+      } 
+    }
+
+    @include mobile {
+      display: flex;
+      flex-direction: row;
+      
+      .navbar-brand {          
+        margin: auto;
+        padding: 0;
+      } 
+    }      
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    top : 1rem;
+    left : 1rem;
+    width: auto;
+    color: $text-color;
+    border: none;
+
+    span {
+      font-size: 1.5rem;
+    }
+
+    .close {
+      display: none;
+      opacity: 1;
+      position: absolute;
+      background-color: $white-color;
+      top: -1rem;
+      left: 1rem;
+      font-weight: 600;
+      font-size: 3.6rem;
+    }      
+  }      
+}
