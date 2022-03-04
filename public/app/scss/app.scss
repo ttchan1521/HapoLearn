@@ -1,3 +1,6 @@
+@import "variable/color";
+@import "variable/media";
+
 body {
   width: 100%;
   padding: 0;
@@ -11,9 +14,21 @@ body {
   }
 }
 
-@import "variable/color";
-@import "variable/media";
+button {
+  background-color: $theme-color;
+  box-shadow: inset 0px 0.4rem 0.4rem $black-color;
+  border: none;
+
+  &:hover {
+    transform: scale(0.9);
+  }
+
+  a {
+    color: $white-color;
+    text-decoration: none;
+  }
+}
+
 @import "component/header";
 @import "component/banner";
-
-
+@import "component/courses";

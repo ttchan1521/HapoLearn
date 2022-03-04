@@ -64,16 +64,9 @@
   
       button {
         padding: 1rem 3rem;
-        background-color: $theme-color;
-        color: $white-color;
         border-radius: 3rem;
         font-size: 1.5rem;
-        border: none;
-        box-shadow: inset 0px 0.4rem 0.4rem $black-color;
-
-        &:hover {
-          transform: scale(0.9);
-        }
+        color: $white-color;
 
         @include laptop {
           font-size: 1.2rem;
@@ -99,5 +92,3 @@
     background: linear-gradient(0deg, $gray-color 0%, $white-color 100%);
   }
 }
-  
-  

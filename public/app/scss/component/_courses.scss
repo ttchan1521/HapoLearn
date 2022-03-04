@@ -1,0 +1,109 @@
+.main-courses {
+    margin-top: -5rem;
+}
+
+.card {
+  border-radius: 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border: none;
+
+  .card-img-top {
+    position: relative;
+    width: 100%;
+    height: 15rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    
+
+    .img-courses {
+      width: 60%;
+      height: 70%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .fe-tut {
+      background-color: $fe-tut;
+  }
+
+  .laravel-tut {
+      background-color: $laravel-tut;
+  }
+
+  .php-tut {
+      background-color: $php-tut;
+  }
+
+  .css-tut {
+    background-color: $css-tut;
+    color: $white-color;
+    font-size: 4rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    
+    .img-courses {
+      height: auto;
+    }
+
+    @include tablet {
+      font-size: 3rem;
+    }    
+  }
+
+  .rails-tut {
+    background-color: $rails-tut;
+  }
+
+  .java-tut {
+    background-color: $java-tut;
+  }
+
+  .card-title {
+    color: $theme-color;
+    font-size: 1.5rem;
+  }
+
+  button {
+    padding: 0.8rem;
+    width: 50%;
+    border-radius: 3rem;
+    margin: auto;
+
+    @include tablet {
+      width: 70%;
+    }
+  }
+}
+
+.other-courses {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+
+  .block-title {
+    justify-content: center;
+
+    .title-other-courses {
+      font-size: 3rem;
+      color: $other-courses;
+      font-weight: 500;
+      border-bottom: solid 0.2rem $theme-color;
+      width: auto;
+      padding: 0;
+    }
+  }
+
+  .view-all {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+
+    a {
+      text-decoration: none;
+      color: $theme-color;
+    }
+  }  
+}
