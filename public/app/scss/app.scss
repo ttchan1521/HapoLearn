@@ -26,9 +26,15 @@ button {
   a {
     color: $white-color;
     text-decoration: none;
+
+    &:hover {
+      color: $white-color;
+    }
   }
 }
 
 @import "component/header";
 @import "component/banner";
 @import "component/courses";
+@import "component/why_hapolearn";
+
