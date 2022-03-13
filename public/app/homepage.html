@@ -1,10 +1,204 @@
-1.1
-2
-3
-4
-5
-6
-7
-8
-9
-10
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HapoLearn - Home</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="public/css/app.css">
+</head>
+<body>
+    <div class="container-all">
+        <nav class="navbar navbar-expand-sm fixed-top navbar-dark" id="navbar">
+            <div class="container-lg">
+               <div class="row">
+                    <div class="col-lg-7 col-md-6 logo">
+                        <a href="#" class="navbar-brand">
+                            <img src="public/image/hapo_learn.png" alt="hapo_learn">
+                        </a>
+                    </div>
+                    
+                    <button id="nav-button" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false">
+                        <i class="fa-solid fa-bars" id="icon-button"></i>                    
+                    </button>
+
+                    <div class="collapse navbar-collapse col-lg-5 col-md-6 block-nav" id="nav">
+                        <ul class="navbar-nav" >
+                            <li class="nav-item">
+                                <a href="#" class="nav-link px-3">HOME</a>
+                            </li>
+    
+                            <li class="nav-item active">
+                                <a href="#" class="nav-link px-3">ALL COURSES</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a href="#" class="nav-link px-3">LOGIN/REGISTER<i class="bi bi-arrow-down-circle-fill"></i></a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a href="#" class="nav-link px-3">PROFILE</a>
+                            </li>
+                        </ul>    
+                    </div>
+                </div>                          
+            </div>
+        </nav>
+
+        <div class="banner">
+            <div class="banner-top" style="background-image: url('public/image/hapo_learn_banner.png')">
+                <div class="banner-content">
+                    <p class="banner-title">Learn Anytime, Anywhere</p>
+                    <p class="banner-title h2-bold">at HapoLearn<img src="public/image/hapo_icon.png" alt="hapo_icon">!</p>
+
+                    <p>Interactive lessons, "on-the-go" <br>
+                    practive, peer support</p>
+
+                    <button><a href="#">Start Learning Now!</a></button>
+                </div>
+            </div>
+
+            <div class="banner-bottom">
+                
+            </div>
+        </div>
+
+        <div class="courses">
+            <div class="main-courses container-lg">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="card text-center">
+                            <div class="card-img-top fe-tut">
+                                <img class="img-courses" src="public/image/frontend_tutorial.png" alt="frontend_tutorial">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title">HTML/CSS/js Tutorial</p>
+                                <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                            </div>
+                            <button class="my-3">
+                                <a href="#" class="">Take This Courses</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card text-center">
+                            <div class="card-img-top laravel-tut">
+                                <img class="img-courses" src="public/image/laravel_tutorial.png" alt="laravel_tutorial">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title">LARAVEL Tutorial</p>
+                                <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                            </div>
+                            <button class="my-3">
+                                <a href="#" class="">Take This Courses</a>
+                            </button>                            
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card text-center">
+                            <div class="card-img-top php-tut">
+                                <img class="img-courses" src="public/image/php_tutorial.png" alt="php_tutorial">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title">PHP Tutorial</p>
+                                <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                            </div>
+                            <button class="my-3">
+                                <a href="#" class="">Take This Courses</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="other-courses container-lg">
+                <div class="row d-flex block-title my-5">
+                    <div class="title-other-courses">Other courses</div>
+                </div>
+
+                <div class="row my-5">
+                    <div class="col-sm-4">
+                        <div class="card text-center">
+                            <div class="card-img-top css-tut">
+                                <div class="img-courses">CSS</div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title">CSS Tutorial</p>
+                                <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                            </div>
+                            <button class="my-3">
+                                <a href="#" class="">Take This Courses</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card text-center">
+                            <div class="card-img-top rails-tut">
+                                <img class="img-courses" src="public/image/rails_tutorial.png" alt="rails_tutorial">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title">Ruby on Rails Tutorial</p>
+                                <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                            </div>
+                            <button class="my-3">
+                                <a href="#" class="">Take This Courses</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="card text-center">
+                            <div class="card-img-top java-tut">
+                                <img class="img-courses" src="public/image/java_tutorial.png" alt="java_tutorial">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title">Java Tutorial</p>
+                                <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                            </div>
+                            <button class="my-3">
+                                <a href="#" class="">Take This Courses</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row view-all">
+                    <p><a href="#">View All Our Courses --></a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="why_hapo" style="background-image: url('public/image/Rectangle.png')">
+            <div class="corner-img">
+                <img src="public/image/mb 1.png" alt="laptop image">
+            </div>
+
+            <div class="title-why">
+                <p>Why HapoLearn?</p>
+            </div>
+
+            <div class="content-why">
+                <p><i class="fa-solid fa-circle-check mx-2"></i>Interactive lessons, "on-the-go" practice, peer support</p>
+                <p><i class="fa-solid fa-circle-check mx-2"></i>Interactive lessons, "on-the-go" practice, peer support</p>
+                <p><i class="fa-solid fa-circle-check mx-2"></i>Interactive lessons, "on-the-go" practice, peer support</p>
+                <p><i class="fa-solid fa-circle-check mx-2"></i>Interactive lessons, "on-the-go" practice, peer support</p>
+                <p><i class="fa-solid fa-circle-check mx-2"></i>Interactive lessons, "on-the-go" practice, peer support</p>
+            </div>
+
+            <div class="center-img">
+                <img src="public/image/transparent-1911160_1280.png" alt="laptop image">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="public/js/component/header.js"></script>
+</body>
+</html>

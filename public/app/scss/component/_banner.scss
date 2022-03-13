@@ -1,0 +1,95 @@
+.banner {
+  margin-top: 5rem;
+
+  @include tablet {
+    margin-top: 8rem;
+  }
+
+  .banner-top {
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 45rem;
+
+    @include laptop {
+      height: 30rem;
+    }
+
+    @include tablet {
+      height: 20rem;
+    }
+    
+    .banner-content {
+      position: absolute;
+      top: 50%;
+      left: 2rem;
+      transform: translate(-0%, -50%);
+  
+      .banner-title {
+        font-size: 3rem;
+        font-weight: 400;
+
+        @include laptop {
+          font-size: 2.5rem;
+        }
+
+        @include tablet {
+          font-size: 2rem;
+        }
+
+        @include mobile {
+          font-size: 2rem;
+        }
+      }
+  
+      .h2-bold {
+        font-weight: 700;
+      }
+  
+      p {
+        font-size: 1.3rem;
+
+        @include laptop {
+          font-size: 1rem;
+        }
+
+        @include tablet {
+          font-size: 0.7rem;
+        }
+
+        @include mobile {
+          font-size: 0.7rem;
+        }
+      }
+  
+      button {
+        padding: 1rem 3rem;
+        border-radius: 3rem;
+        font-size: 1.5rem;
+        color: $white-color;
+
+        @include laptop {
+          font-size: 1.2rem;
+          padding: 0.7rem 2.5rem;
+        }
+
+        @include tablet {
+          font-size: 0.8rem;
+          padding: 0.5rem 2rem;
+        }
+
+        @include mobile {
+          font-size: 0.8rem;
+          padding: 0.5rem 2rem;
+        }
+      }
+    }
+  }
+
+  .banner-bottom {
+    height: 10rem;
+    background: $gray-color;
+    background: linear-gradient(0deg, $gray-color 0%, $white-color 100%);
+  }
+}
